@@ -17,7 +17,7 @@ Example 3:
 
 Input: nums = [3,3], target = 6
 Output: [0,1]
- 
+
 
 Constraints:
 
@@ -27,13 +27,11 @@ Constraints:
 Only one valid answer exists.
 """
 
-
-
 nums = [1, 2, 3, 4, 5, 6]
 target = 10
 
 
-def sum_two(nums, target):
+def two_sum(nums, target):
     seen = {}
     for i in range(len(nums)):
         diff = target - nums[i]
@@ -43,5 +41,5 @@ def sum_two(nums, target):
             seen[nums[i]] = i
 
 
-sumTwo = sum_two(nums, target)
-print(sumTwo)
+twoSum = two_sum(nums, target)
+print(twoSum)
