@@ -38,8 +38,8 @@ def add_two_numbers(l1, l2):
     current = head
     carry = 0
     while l1 or l2 or carry != 0:
-        l1_value = l1.val if l1 else None
-        l2_value = l2.val if l2 else None
+        l1_value = l1.val if l1 else 0
+        l2_value = l2.val if l2 else 0
         total = l1_value + l2_value + carry
         current.next = ListNode(total % 10)
         current = current.next
@@ -62,7 +62,7 @@ def create_linked_list(values):
 
 
 l1 = create_linked_list([1, 7, 1])
-l2 = create_linked_list([0, 9, 1])
+l2 = create_linked_list([0, 9, 1, 1])
 
 result = add_two_numbers(l1, l2)
 
