@@ -22,7 +22,7 @@ Constraints:
 0 <= prices[i] <= 104
 """
 
-prices = [7, 6, 4, 3, 1]
+prices = [7, 1, 4, 3, 1]
 
 
 def max_profit(prices):
