@@ -18,7 +18,7 @@ Constraints:
 s consist of only digits and English letters.
 """
 
-s = "aaabbaa"
+s = "abccccdd"
 
 
 def longest_palindrome(s):
