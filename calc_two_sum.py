@@ -43,20 +43,3 @@ def two_sum(nums, target):
 
 twoSum = two_sum(nums, target)
 print(twoSum)
-
-
-import sys
-
-
-s1 = sys.stdin.readline().strip()
-s2 = sys.stdin.readline().strip()
-hash_s1 = {}
-hash_s2 = {}
-
-for i in s1:
-    hash_s1[i] = hash_s1.get(i, 0) + 1
-
-for i in s2:
-    hash_s2[i] = hash_s2.get(i, 0) + 1
-
-print(int(hash_s1 == hash_s2))
